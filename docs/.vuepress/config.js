@@ -147,6 +147,6 @@ module.exports = {
           return moment(timestamp).format('YYYY/MM/DD, H:MM:SS');
         }
       }
-    ]
+    ],
   ]
 }
