@@ -9,7 +9,7 @@
     <meta name="description" content="浅墨漫芳华 热爱生活，分享技术">
     <meta name="keywords" content="个人技术博客,后端,后端开发,后端框架,Spring,Spring面试题,技术文档,学习,面试,Java,js,ES6,vue,,Node,git,github,markdown">
     <meta name="theme-color" content="#11a8cd">
-    <link rel="preload" href="/assets/css/0.styles.ceb2dd07.css" as="style"><link rel="preload" href="/assets/js/app.1454ae43.js" as="script"><link rel="preload" href="/assets/js/2.b4afc22d.js" as="script"><link rel="prefetch" href="/assets/js/10.c24477d2.js"><link rel="prefetch" href="/assets/js/3.df228053.js"><link rel="prefetch" href="/assets/js/4.a27a64e8.js"><link rel="prefetch" href="/assets/js/5.21ac4740.js"><link rel="prefetch" href="/assets/js/6.fd7905d2.js"><link rel="prefetch" href="/assets/js/7.a328dba1.js"><link rel="prefetch" href="/assets/js/8.5917720f.js"><link rel="prefetch" href="/assets/js/9.7160e24f.js">
+    <link rel="preload" href="/assets/css/0.styles.ceb2dd07.css" as="style"><link rel="preload" href="/assets/js/app.75ab53d3.js" as="script"><link rel="preload" href="/assets/js/2.b4afc22d.js" as="script"><link rel="prefetch" href="/assets/js/10.c84cbe5c.js"><link rel="prefetch" href="/assets/js/11.3cdfff28.js"><link rel="prefetch" href="/assets/js/3.a9d1bb6d.js"><link rel="prefetch" href="/assets/js/4.a27a64e8.js"><link rel="prefetch" href="/assets/js/5.21ac4740.js"><link rel="prefetch" href="/assets/js/6.fd7905d2.js"><link rel="prefetch" href="/assets/js/7.a328dba1.js"><link rel="prefetch" href="/assets/js/8.a239f561.js"><link rel="prefetch" href="/assets/js/9.3d47a12f.js">
     <link rel="stylesheet" href="/assets/css/0.styles.ceb2dd07.css">
   </head>
   <body class="theme-mode-light">
@@ -23,9 +23,9 @@
     全部分类
   </a> <div class="categories"><a href="/categories/?category=%E6%8A%80%E6%9C%AF">
       技术
-      <span>2</span></a><a href="/categories/?category=Java">
+      <span>3</span></a><a href="/categories/?category=Java">
       Java
-      <span>1</span></a><a href="/categories/?category=Spring">
+      <span>2</span></a><a href="/categories/?category=Spring">
       Spring
       <span>1</span></a> <!----></div></div> <div class="post-list"><div><div class="post card-box iconfont icon-zhiding"><div class="title-wrapper"><h2><a href="/pages/e17e9a/">从ReentrantLock的实现看AQS的原理及应用</a></h2> <div class="article-info"><a title="作者" target="_blank" href="https://github.com/kangec" class="iconfont icon-touxiang">
             Kangec liu
@@ -61,13 +61,38 @@
             </a></span></div></div> <div class="excerpt-wrapper"><div class="excerpt"><p>在关于Spring的面试中，我们经常会被问到一个问题：Spring是如何解决循环依赖的问题的。这个问题算是关于Spring的一个高频面试题，因为如果不刻意研读，相信即使读过源码，面试者也不一定能够一下子思考出个中奥秘。本文主要针对这个问题，从源码的角度对其实现原理进行讲解。</p>
 </div> <a href="/pages/958a5b/" class="readmore iconfont icon-jiantou-you">
           阅读全文
+        </a></div></div><div class="post card-box iconfont icon-zhiding"><div class="title-wrapper"><h2><a href="/pages/193355/">Java IO模型</a></h2> <div class="article-info"><a title="作者" target="_blank" href="https://github.com/kangec" class="iconfont icon-touxiang">
+            Kangec liu
+          </a> <span title="创建时间" class="iconfont icon-riqi">
+            2020-07-23
+          </span> <span title="分类" class="iconfont icon-wenjian"><a href="/categories/?category=%E6%8A%80%E6%9C%AF">
+              技术
+            </a><a href="/categories/?category=Java">
+              Java
+            </a></span> <span title="标签" class="iconfont icon-biaoqian tags"><a href="/tags/?tag=%E5%9F%BA%E7%A1%80">
+              基础
+            </a><a href="/tags/?tag=IO%E6%A8%A1%E5%9E%8B">
+              IO模型
+            </a></span></div></div> <div class="excerpt-wrapper"><div class="excerpt"><h1 id="java-io模型"><a class="header-anchor" href="#java-io模型">#</a> Java IO模型</h1>
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/kangec/image_store/image323.png" width="500">
+</p>
+<p>在讲 BIO,NIO,AIO 之前先来回顾一下这样几个概念：同步与异步，阻塞与非阻塞。关于同步和异步的概念解读困扰着很多程序员，大部分的解读都会带有自己的一点偏见。参考了 Stackoverflow相关问题后对原有答案进行了进一步完善：</p>
+<blockquote>
+<p>When you execute something synchronously, you wait for it to finish before moving on to another task. When you execute something asynchronously, you can move on to another task before it finishes.</p>
+</blockquote>
+<blockquote>
+<p>当你同步执行某项任务时，你需要等待其完成才能继续执行其他任务。当你异步执行某些操作时，你可以在完成另一个任务之前继续进行。</p>
+</blockquote>
+</div> <a href="/pages/193355/" class="readmore iconfont icon-jiantou-you">
+          阅读全文
         </a></div></div></div></div> <div class="pagination" style="display:none;"><span class="card-box prev iconfont icon-jiantou-zuo disabled"><p>上一页</p></span> <div class="pagination-list"></div> <span class="card-box next iconfont icon-jiantou-you"><p>下一页</p></span></div></div> <div class="main-right"><div class="categories-wrapper card-box"><a href="/categories/" aria-current="page" title="全部分类" class="title iconfont icon-wenjianjia router-link-exact-active router-link-active">
     全部分类
   </a> <div class="categories"><a href="/categories/?category=%E6%8A%80%E6%9C%AF">
       技术
-      <span>2</span></a><a href="/categories/?category=Java">
+      <span>3</span></a><a href="/categories/?category=Java">
       Java
-      <span>1</span></a><a href="/categories/?category=Spring">
+      <span>2</span></a><a href="/categories/?category=Spring">
       Spring
       <span>1</span></a> <!----></div></div></div></div></div> <div class="footer"><div class="icons"><a href="mailto:ardien@126.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/kangec" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="http://music.163.com/playlist?id=630677470" title="听音乐" target="_blank" class="iconfont icon-erji"></a></div> 
   Theme by <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
@@ -81,6 +106,6 @@
         </li><li class="iconfont icon-yuedu">
           阅读模式
         </li></ul></div></div> <div class="body-bg" style="background:url(https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175828.jpeg) center center / cover no-repeat;"></div></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.1454ae43.js" defer></script><script src="/assets/js/2.b4afc22d.js" defer></script>
+    <script src="/assets/js/app.75ab53d3.js" defer></script><script src="/assets/js/2.b4afc22d.js" defer></script>
   </body>
 </html>
