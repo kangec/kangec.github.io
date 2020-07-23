@@ -3,5 +3,5 @@ module.exports = [
   {text: '分类', link: '/categories/'},
   {text: '标签', link: '/tags/'},
   {text: '关于', link: '/about/'},
-  {text: '归档', link: '/archives/'}
+  {text: '归档', link: '/archives/'},
 ]
