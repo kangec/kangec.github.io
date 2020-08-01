@@ -9,7 +9,7 @@
     <meta name="description" content="浅墨漫芳华 热爱生活，分享技术">
     <meta name="keywords" content="个人技术博客,后端,后端开发,后端框架,Spring,Spring面试题,技术文档,学习,面试,Java,js,ES6,vue,,Node,git,github,markdown">
     <meta name="theme-color" content="#11a8cd">
-    <link rel="preload" href="/assets/css/0.styles.ceb2dd07.css" as="style"><link rel="preload" href="/assets/js/app.b02fe4de.js" as="script"><link rel="preload" href="/assets/js/2.b4afc22d.js" as="script"><link rel="preload" href="/assets/js/36.a265de10.js" as="script"><link rel="prefetch" href="/assets/js/10.9f909de6.js"><link rel="prefetch" href="/assets/js/11.80490641.js"><link rel="prefetch" href="/assets/js/12.52a87419.js"><link rel="prefetch" href="/assets/js/13.bd96b66a.js"><link rel="prefetch" href="/assets/js/14.8c19391d.js"><link rel="prefetch" href="/assets/js/15.ee7245a9.js"><link rel="prefetch" href="/assets/js/16.45ef87d7.js"><link rel="prefetch" href="/assets/js/17.f2ec61a7.js"><link rel="prefetch" href="/assets/js/18.4d28b28d.js"><link rel="prefetch" href="/assets/js/19.5f9716d4.js"><link rel="prefetch" href="/assets/js/20.9dc234ab.js"><link rel="prefetch" href="/assets/js/21.04b60729.js"><link rel="prefetch" href="/assets/js/22.4a42d87a.js"><link rel="prefetch" href="/assets/js/23.cf0c63b8.js"><link rel="prefetch" href="/assets/js/24.6b6c205b.js"><link rel="prefetch" href="/assets/js/25.aed1314a.js"><link rel="prefetch" href="/assets/js/26.193be97e.js"><link rel="prefetch" href="/assets/js/27.ef176e1a.js"><link rel="prefetch" href="/assets/js/28.dcbb54f1.js"><link rel="prefetch" href="/assets/js/29.2d9576de.js"><link rel="prefetch" href="/assets/js/3.3bf512f2.js"><link rel="prefetch" href="/assets/js/30.7a55e89a.js"><link rel="prefetch" href="/assets/js/31.1de2e191.js"><link rel="prefetch" href="/assets/js/32.35ca75bc.js"><link rel="prefetch" href="/assets/js/33.890d7d76.js"><link rel="prefetch" href="/assets/js/34.2a82c4fc.js"><link rel="prefetch" href="/assets/js/35.abc4425d.js"><link rel="prefetch" href="/assets/js/4.a27a64e8.js"><link rel="prefetch" href="/assets/js/5.f13e5666.js"><link rel="prefetch" href="/assets/js/6.52ffc4cf.js"><link rel="prefetch" href="/assets/js/7.07d5c214.js"><link rel="prefetch" href="/assets/js/8.34096117.js"><link rel="prefetch" href="/assets/js/9.fab1fc77.js">
+    <link rel="preload" href="/assets/css/0.styles.ceb2dd07.css" as="style"><link rel="preload" href="/assets/js/app.f69884f0.js" as="script"><link rel="preload" href="/assets/js/2.b4afc22d.js" as="script"><link rel="preload" href="/assets/js/37.b0a3533b.js" as="script"><link rel="prefetch" href="/assets/js/10.9f909de6.js"><link rel="prefetch" href="/assets/js/11.80490641.js"><link rel="prefetch" href="/assets/js/12.52a87419.js"><link rel="prefetch" href="/assets/js/13.bd96b66a.js"><link rel="prefetch" href="/assets/js/14.8c19391d.js"><link rel="prefetch" href="/assets/js/15.ee7245a9.js"><link rel="prefetch" href="/assets/js/16.45ef87d7.js"><link rel="prefetch" href="/assets/js/17.f2ec61a7.js"><link rel="prefetch" href="/assets/js/18.4d28b28d.js"><link rel="prefetch" href="/assets/js/19.5f9716d4.js"><link rel="prefetch" href="/assets/js/20.9dc234ab.js"><link rel="prefetch" href="/assets/js/21.04b60729.js"><link rel="prefetch" href="/assets/js/22.4a42d87a.js"><link rel="prefetch" href="/assets/js/23.a012abb9.js"><link rel="prefetch" href="/assets/js/24.49b8c193.js"><link rel="prefetch" href="/assets/js/25.d6b79416.js"><link rel="prefetch" href="/assets/js/26.998b6f68.js"><link rel="prefetch" href="/assets/js/27.35c3428d.js"><link rel="prefetch" href="/assets/js/28.4620cca5.js"><link rel="prefetch" href="/assets/js/29.c313b2ff.js"><link rel="prefetch" href="/assets/js/3.962a84d4.js"><link rel="prefetch" href="/assets/js/30.e76dc43e.js"><link rel="prefetch" href="/assets/js/31.f0de6059.js"><link rel="prefetch" href="/assets/js/32.cc371c1f.js"><link rel="prefetch" href="/assets/js/33.041713d9.js"><link rel="prefetch" href="/assets/js/34.88433c92.js"><link rel="prefetch" href="/assets/js/35.311593e6.js"><link rel="prefetch" href="/assets/js/36.66f8b8ac.js"><link rel="prefetch" href="/assets/js/4.a27a64e8.js"><link rel="prefetch" href="/assets/js/5.f13e5666.js"><link rel="prefetch" href="/assets/js/6.52ffc4cf.js"><link rel="prefetch" href="/assets/js/7.07d5c214.js"><link rel="prefetch" href="/assets/js/8.34096117.js"><link rel="prefetch" href="/assets/js/9.fab1fc77.js">
     <link rel="stylesheet" href="/assets/css/0.styles.ceb2dd07.css">
   </head>
   <body class="theme-mode-light">
@@ -32,7 +32,17 @@
             </a></span></div></div> <div class="excerpt-wrapper"><div class="excerpt"><p>在关于Spring的面试中，我们经常会被问到一个问题：Spring是如何解决循环依赖的问题的。这个问题算是关于Spring的一个高频面试题，因为如果不刻意研读，相信即使读过源码，面试者也不一定能够一下子思考出个中奥秘。本文主要针对这个问题，从源码的角度对其实现原理进行讲解。</p>
 </div> <a href="/pages/958a5b/" class="readmore iconfont icon-jiantou-you">
           阅读全文
-        </a></div></div><div class="post card-box"><div class="title-wrapper"><h2><a href="/pages/88fe8d/">Java高并发编程之并发容器 BlockingQueue</a></h2> <div class="article-info"><a title="作者" target="_blank" href="https://github.com/kangec" class="iconfont icon-touxiang">
+        </a></div></div><div class="post card-box"><div class="title-wrapper"><h2><a href="/pages/d9ee4e/">Java高并发编程之 Executor</a></h2> <div class="article-info"><a title="作者" target="_blank" href="https://github.com/kangec" class="iconfont icon-touxiang">
+            Kangec liu
+          </a> <span title="创建时间" class="iconfont icon-riqi">
+            2020-08-01
+          </span> <span title="分类" class="iconfont icon-wenjian"><a href="/categories/?category=%E4%B8%93%E6%A0%8F">
+              专栏
+            </a><a href="/categories/?category=Java%E5%9F%BA%E7%A1%80">
+              Java基础
+            </a></span> <span title="标签" class="iconfont icon-biaoqian tags"><a href="/tags/?tag=%E9%AB%98%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B">
+              高并发编程
+            </a></span></div></div> <!----></div><div class="post card-box"><div class="title-wrapper"><h2><a href="/pages/88fe8d/">Java高并发编程之并发容器 BlockingQueue</a></h2> <div class="article-info"><a title="作者" target="_blank" href="https://github.com/kangec" class="iconfont icon-touxiang">
             Kangec liu
           </a> <span title="创建时间" class="iconfont icon-riqi">
             2020-07-31
@@ -135,20 +145,6 @@
 <p>Synchronizer是一个对象，它根据本身的状态调节线程的控制流。阻塞队列可以扮演一个Synchronizer的角色；其他类型的 Synchronizer包括信号量（ semaphore）、以及闭锁（ latch）.在平台类库中存在一些 Synchronizer类；如果这些不能满你同样可以创建一个你自己的 Synchronizer。</p>
 </div> <a href="/pages/69cc3e/" class="readmore iconfont icon-jiantou-you">
           阅读全文
-        </a></div></div><div class="post card-box"><div class="title-wrapper"><h2><a href="/pages/17a672/">Netty系列-Netty编解码机制</a></h2> <div class="article-info"><a title="作者" target="_blank" href="https://github.com/kangec" class="iconfont icon-touxiang">
-            Kangec liu
-          </a> <span title="创建时间" class="iconfont icon-riqi">
-            2020-07-27
-          </span> <span title="分类" class="iconfont icon-wenjian"><a href="/categories/?category=%E4%B8%93%E6%A0%8F">
-              专栏
-            </a><a href="/categories/?category=Netty%E4%B8%93%E6%A0%8F">
-              Netty专栏
-            </a></span> <span title="标签" class="iconfont icon-biaoqian tags"><a href="/tags/?tag=Netty">
-              Netty
-            </a></span></div></div> <div class="excerpt-wrapper"><div class="excerpt"><p>在网络应用中需要实现某种编解码器，将原始字节数据与自定义的消息对象进行互相转换。网络中都是以字节码的数据形式来传输数据的，服务器编码数据后发送到客户端，客户端需要对数据进行解码。</p>
-<p>Netty提供了强大的编解码器框架，使得我们编写自定义的编解码器很容易，也容易封装重用。对于Netty而言，编解码器由两部分组成：编码器、解码器。</p>
-</div> <a href="/pages/17a672/" class="readmore iconfont icon-jiantou-you">
-          阅读全文
         </a></div></div></div></div> <div class="pagination" data-v-4a0f3e9c><span class="card-box prev iconfont icon-jiantou-zuo disabled"><p>上一页</p></span> <div class="pagination-list"><span class="card-box active">
       1
     </span><span class="card-box">
@@ -165,9 +161,9 @@
       Spring
       <span>1</span></a><a href="/categories/?category=%E4%B8%93%E6%A0%8F">
       专栏
-      <span>10</span></a><a href="/categories/?category=Java%E5%9F%BA%E7%A1%80">
+      <span>11</span></a><a href="/categories/?category=Java%E5%9F%BA%E7%A1%80">
       Java基础
-      <span>14</span></a><a href="/categories/?category=Netty%E4%B8%93%E6%A0%8F">
+      <span>15</span></a><a href="/categories/?category=Netty%E4%B8%93%E6%A0%8F">
       Netty专栏
       <span>6</span></a><a href="/categories/?category=%E9%9D%A2%E8%AF%95%E9%A2%98">
       面试题
@@ -179,29 +175,29 @@
       粉类
       <span>1</span></a> <!----></div></div> <div class="tags-wrapper card-box" data-v-4a0f3e9c><a href="/tags/" title="全部标签" class="title iconfont icon-biaoqian1">
     热门标签
-  </a> <div class="tags"><a href="/tags/?tag=Java" style="background:#F8B26A;--random-color:#F8B26A;">
+  </a> <div class="tags"><a href="/tags/?tag=Java" style="background:#F47E60;--random-color:#F47E60;">
         Java
       </a> <span></span><a href="/tags/?tag=Spring" style="background:#F8B26A;--random-color:#F8B26A;">
         Spring
-      </a> <span></span><a href="/tags/?tag=%E9%AB%98%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B" style="background:#849B87;--random-color:#849B87;">
+      </a> <span></span><a href="/tags/?tag=%E9%AB%98%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B" style="background:#67CC86;--random-color:#67CC86;">
         高并发编程
-      </a> <span></span><a href="/tags/?tag=Netty" style="background:#E15B64;--random-color:#E15B64;">
+      </a> <span></span><a href="/tags/?tag=Netty" style="background:#67CC86;--random-color:#67CC86;">
         Netty
       </a> <span></span><a href="/tags/?tag=%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B" style="background:#67CC86;--random-color:#67CC86;">
         线程模型
-      </a> <span></span><a href="/tags/?tag=%E5%8F%8D%E5%BA%94%E5%BC%8F%E7%BC%96%E7%A8%8B" style="background:#F47E60;--random-color:#F47E60;">
+      </a> <span></span><a href="/tags/?tag=%E5%8F%8D%E5%BA%94%E5%BC%8F%E7%BC%96%E7%A8%8B" style="background:#F8B26A;--random-color:#F8B26A;">
         反应式编程
-      </a> <span></span><a href="/tags/?tag=%E5%9F%BA%E7%A1%80" style="background:#F47E60;--random-color:#F47E60;">
+      </a> <span></span><a href="/tags/?tag=%E5%9F%BA%E7%A1%80" style="background:#67CC86;--random-color:#67CC86;">
         基础
-      </a> <span></span><a href="/tags/?tag=%E9%9D%A2%E8%AF%95%E9%A2%98" style="background:#F47E60;--random-color:#F47E60;">
+      </a> <span></span><a href="/tags/?tag=%E9%9D%A2%E8%AF%95%E9%A2%98" style="background:#F8B26A;--random-color:#F8B26A;">
         面试题
-      </a> <span></span><a href="/tags/?tag=%E7%BE%8E%E9%A3%9F" style="background:#F47E60;--random-color:#F47E60;">
+      </a> <span></span><a href="/tags/?tag=%E7%BE%8E%E9%A3%9F" style="background:#67CC86;--random-color:#67CC86;">
         美食
-      </a> <span></span><a href="/tags/?tag=IO%E6%A8%A1%E5%9E%8B" style="background:#11a8cd;--random-color:#11a8cd;">
+      </a> <span></span><a href="/tags/?tag=IO%E6%A8%A1%E5%9E%8B" style="background:#F8B26A;--random-color:#F8B26A;">
         IO模型
       </a> <span></span><a href="/tags/?tag=AQS" style="background:#F8B26A;--random-color:#F8B26A;">
         AQS
-      </a> <span></span><a href="/tags/?tag=%E5%A4%9A%E7%BA%BF%E7%A8%8B" style="background:#F47E60;--random-color:#F47E60;">
+      </a> <span></span><a href="/tags/?tag=%E5%A4%9A%E7%BA%BF%E7%A8%8B" style="background:#E15B64;--random-color:#E15B64;">
         多线程
       </a> <span></span> <!----></div></div></div></div></div> <div class="footer"><div class="icons"><a href="mailto:ardien@126.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/kangec" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="http://music.163.com/playlist?id=630677470" title="听音乐" target="_blank" class="iconfont icon-erji"></a></div> 
   Theme by <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
@@ -215,6 +211,6 @@
         </li><li class="iconfont icon-yuedu">
           阅读模式
         </li></ul></div></div> <div class="body-bg" style="background:url(https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175828.jpeg) center center / cover no-repeat;"></div></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.b02fe4de.js" defer></script><script src="/assets/js/2.b4afc22d.js" defer></script><script src="/assets/js/36.a265de10.js" defer></script>
+    <script src="/assets/js/app.f69884f0.js" defer></script><script src="/assets/js/2.b4afc22d.js" defer></script><script src="/assets/js/37.b0a3533b.js" defer></script>
   </body>
 </html>
