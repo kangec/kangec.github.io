@@ -10,8 +10,8 @@ module.exports = [
         {text: ' Java基础', link: '/pages/66f7b1/'},
         {text: ' Netty', link: '/pages/943ab2/'},
         {text: ' Spring', link: '/pages/958a5b/'},
-        {text: ' Spring Boot', link: '/note/springboot/'},
-      
+        {text: ' Mybatis', link: '/pages/a7e17e/'},
+        
     ]
   },
   {
