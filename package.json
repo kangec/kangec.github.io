@@ -22,6 +22,7 @@
     "yamljs": "^0.3.0"
   },
   "dependencies": {
-    "vuepress-plugin-comment": "^0.7.3"
+    "vuepress-plugin-comment": "^0.7.3",
+    "vuepress-plugin-img-lazy": "^1.0.4"
   }
 }
